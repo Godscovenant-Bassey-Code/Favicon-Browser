@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif,verdana;
+    height: 100vh;
+    background: linear-gradient(45deg, #21335a 75%, rgb(26, 121, 153) 25%);
+    color: #fff;
+    text-align: center;
+}
+h1 {
+    font-size: 61px;
+    margin-top: 28px;
+}
+.input-box {
+    width: 500px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+#input-field {
+    width: 100%;
+    height: 30px;
+    border: none;
+    font-size: 18px;
+    outline: none;
+}
+
+.fa-microphone {
+    color: rgb(61, 61, 61);
+    padding: 0px 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#input-btn {
+        padding: 9px 12px;
+        background-color: maroon;
+        border: none;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        cursor: pointer;
+}
+.fa-search {
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.fa-th {
+    position: absolute;
+    right: 15%;
+    top: 5%;
+    font-size: 28px;
+    cursor: pointer;
+}
+.fa-th:hover {
+    background-color: #f7efec;
+    padding: 6px;
+    border-radius: 50%;
+    color: #a09e9d;
+}
+
+.fa-user-circle {
+    position: absolute;
+    right: 11%;
+    top: 5%;
+    font-size: 28px;
+    cursor: pointer;
+}
+.fa-user-circle:hover {
+    background-color: #f7efec;
+    padding: 6px;
+    border-radius: 50%;
+    color: #a09e9d;
+}
+
+.fa-bars {
+    position: absolute;
+    right: 7%;
+    top: 5%;
+    font-size: 28px;
+    cursor: pointer;
+}
+.fa-bars:hover {
+    background-color: #f7efec;
+    padding: 6px 9px;
+    border-radius: 50%;
+    color: #a09e9d;
+}
+
+.fa-xmark {
+    position: absolute;
+    right: 7%;
+    top: 5%;
+    font-size: 28px;
+    cursor: pointer;
+    display: block;
+}
+.fa-xmark:hover {
+    background-color: #f7efec;
+    padding: 6px 9px;
+    border-radius: 50%;
+    color: #a09e9d;
+}
+
+
+.mini-btn {
+    margin: 18px 0px;
+}
+
+span {
+    margin: 10px 5px;
+    background-color: #ffffff54;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-content {
+    position: absolute;
+    right: 2%;
+    background: linear-gradient(45deg, rgb(45, 45, 146) 75%, rgb(192, 165, 165) 25%);
+    top: 17%;
+    width: 18%;
+    height: 0;
+    border-radius: 10px;
+    display: block;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+}
+.menu-content.open {
+    height: 13vh;
+}
+.english {
+    font-size: 24px;
+    cursor: pointer;
+}
+.english:hover {
+    background: gray;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 0px;
+}
+.Ibibio {
+    font-size: 24px;
+    cursor: pointer;
+}
+.Ibibio:hover {
+    background: gray;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    margin-top: 1px;
+}
+.Igbo {
+    font-size: 24px;
+    cursor: pointer;
+}
+.Igbo:hover {
+    background: gray;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 0px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .input-box {
+        width: 100%;
+    }
+    span {
+        margin: 10px 5px;
+        background-color: #ffffff54;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+    h1 {
+        margin-left: 12px;
+    }
+    .fa-th {
+        right: 25%;
+    }
+    .fa-user-circle {
+        right: 15%;
+    }
+    .fa-bars {
+        right: 6%;
+    }
+    .menu-content {
+        display: block;
+        width: 50%;
+        right: 3%;
+        top: 15%;
+    }
+ }
